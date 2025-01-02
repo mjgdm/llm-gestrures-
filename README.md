@@ -1,5 +1,9 @@
-# llm-gestrures-
+#hand_gesture_dectetion.py
 
+if __name__ == '__main__':
+    cap = HandGestureDectetion()
+    cap.run()
+    print('Finish')
 import cv2
 import numpy as np
 import time
@@ -107,4 +111,13 @@ class HandGestureDectetion:
     def exit(self):
         self.cap.release()
         cv2.destroyAllWindows()
+
+
+#main.py
+from hand_gesture_dectetion import HandGestureDectetion
+
+if __name__ == '__main__':
+    cap = HandGestureDectetion()
+    cap.run()
+    print('Finish')
 
